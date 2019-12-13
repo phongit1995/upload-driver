@@ -1,9 +1,9 @@
 require('dotenv').config();
-import * as express from 'express' ;
-import * as bodyParser from 'body-parser';
-import * as multer  from 'multer';
-import * as GoogleDriveStorage from 'multer-google-drive';
-import * as drive from './google/index';
+let express = require( 'express') ;
+let bodyParser = require('body-parser');
+let  multer = require( 'multer');
+let  GoogleDriveStorage  = require( 'multer-google-drive');
+let  drive  = require( './google/index');
 let stogare = GoogleDriveStorage({
     drive:drive,
     parents:'1XSnU_Ux61wZZfep49smFR7WjN2E2UF-e',
